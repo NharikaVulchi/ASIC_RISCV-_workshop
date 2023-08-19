@@ -95,9 +95,21 @@ See the output using **spike**:
 Integer - Signed and Unsigned
 </summary>
 
-Integer Number Representation
+**Integer Number Representation :**
+
+Unsigned Numbers
+Minimum value : 0
+Maximum Value : 2^64 -1
 
 
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/d993ccfd-0ca6-4ca3-bda4-0fd4e0c5e445)
+
+Negative numbers are represented using 2's complement representation:
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/d00de84e-956e-4e5b-ae9b-859f5be23000)
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/1caecc5b-b1cb-4a65-ac1a-096e402bc58e)
+
 
 </details>
