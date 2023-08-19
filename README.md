@@ -6,7 +6,7 @@ Introduction to RISC-V
 </summary>
 RISC-V is an open-source instruction set architecture (ISA) designed with simplicity and versatility. It features a modular structure, enabling custom extensions for diverse applications. Its load-store memory model and compact register set streamline execution. Privilege levels ensure secure operation. RISC-V suits embedded systems to high-performance computing, fostering innovation through open collaboration and customization.
 
-Applications to Hardware:
+Applications to Hardware: There are 3 major steps of how an application can be run on hardware, which are as follows:
 
 **Operating System:**
 
