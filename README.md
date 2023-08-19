@@ -185,3 +185,19 @@ Output:
 
 
 </details>
+
+## DAY 2 INTRODUCTION TO ABI AND BASIC VERIFICATION FLOW
+
+<details>
+<summary>
+Application Binary Interface
+</summary>
+1. The application user can access the hardware resources using system calls, this is knows as the Application Binary Interface. This interface is done via the registers of the hardware.
+2. RISC-V architecture provides this interface.
+3. Length of the registers is given by **xlen** which can be 32 bit wide or 64 bit wide.
+4. Number of registers are 32
+
+**Registers in RISC-V 64 bit architecture**
+
+
+</details>
