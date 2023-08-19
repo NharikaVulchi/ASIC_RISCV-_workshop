@@ -68,4 +68,18 @@ Below are the figure showing disassemble object file along with the main functio
 
 ![Screenshot from 2023-08-19 15-07-04](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/1aa4afcd-3d4c-45da-ab2c-f6a7091e7043)
 
+
+See the output using **spike**:
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/a75b9634-faa6-4fda-8410-ebf38fd993a2)
+
+**lui** instruction : load upper immediate
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/f5b0e7f1-9af5-4502-9f6b-96b121ecd52a)
+
+**spike-d** is used to debug. we can execute each instruction in detail and check the change in the register values accordingly in each step.
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/6fb52576-c1ee-4017-80b7-6999bcbaadf4)
+
+
 </details>
