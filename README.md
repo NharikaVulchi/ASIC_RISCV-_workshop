@@ -180,4 +180,8 @@ Output:
 
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/1cd71d67-d462-4454-a928-1dc42c8056fb)
 
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/e16c77b8-2eed-4378-ae9c-f1836a01c405)
+
+
 </details>
