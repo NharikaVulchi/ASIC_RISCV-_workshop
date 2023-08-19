@@ -30,3 +30,42 @@ The detailed ISA can be found here   https://riscv.org/wp-content/uploads/2017/0
 </details>
 
 
+<details>
+<summary>
+RISC-V Compiler
+</summary>
+Let us start with a C program to find the sum of numbers from 1 to n. Code:
+
+
+```
+
+#include <stdio.h>
+
+int main () {
+	int i,sum = 0, n = 6;
+	for (i = 1; i <=n; ++i) {
+		sum += i;
+	}
+	printf("The sum of the number from 1 to %d is %d\n", n,sum);
+	return 0;
+	}
+```
+
+Use the below commands to compile and view the assembly code for the above C program:
+
+
+```
+riscv64-unknown-elf-gcc  -o <object_name.o> <filename.c>
+riscv64-unknown-elf-objdump -d <object_name.o>
+```
+
+Below are the figure showing disassemble object file along with the main function:
+
+
+![Screenshot from 2023-08-19 15-20-32](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/5b6fc6c1-11aa-4655-88ad-237033912613)
+
+
+
+![Screenshot from 2023-08-19 15-07-04](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/1aa4afcd-3d4c-45da-ab2c-f6a7091e7043)
+
+</details>
