@@ -97,8 +97,13 @@ Integer - Signed and Unsigned
 
 **Integer Number Representation :**
 
+
 Unsigned Numbers
+
+
 Minimum value : 0
+
+
 Maximum Value : 2^64 -1
 
 
