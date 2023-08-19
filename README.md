@@ -159,4 +159,25 @@ return 0;
 
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/95571c5c-e994-4e5f-9958-891272cf4faf)
 
+
+**Lab 3**
+
+Let us observe the highest and lowest number for signed integers:
+
+
+```
+#include <stdio.h>
+#include <math.h>
+int main() {
+long long int max = (int) (pow(2,63) -1);
+long long int min = (int) (pow(2,63) * -1);
+printf("highest number represented by long long int is %lld\n", max);
+printf("lowest number represented by long long int is %lld\n", min);
+return 0;
+```
+
+Output:
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/1cd71d67-d462-4454-a928-1dc42c8056fb)
+
 </details>
