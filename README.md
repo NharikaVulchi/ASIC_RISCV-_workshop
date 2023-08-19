@@ -117,4 +117,46 @@ Negative numbers are represented using 2's complement representation:
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/1caecc5b-b1cb-4a65-ac1a-096e402bc58e)
 
 
+**Lab 1**
+
+Highest unsigned number that can be represented by RISC-V:Consider the below code 
+
+
+```
+#include <stdio.h>
+#include <math.h>
+int main() {
+unsigned long long int max = (unsigned long long int) (pow(2,64) -1);
+printf("highest number represented by unsigned long long int is %llu\n", max);
+return 0;
+}
+```
+
+
+Ouput :
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/60e3ddf4-05e2-428f-b78a-5b00a6c5d5f5)
+
+
+**Lab 2**
+
+
+For the below code we expect the output to be a negative umber, but we get 0 because **unsigned** can not represent negative numbers
+
+
+```
+#include <stdio.h>
+#include <math.h>
+int main() {
+unsigned long long int max = (unsigned long long int) (pow(2,64) * -1);
+printf("highest number represented by unsigned long long int is %llu\n", max);
+return 0;
+}
+```
+
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/95571c5c-e994-4e5f-9958-891272cf4faf)
+
 </details>
