@@ -397,6 +397,16 @@ Key concepts include Logic gates, truth tables, boolean algebra, multiplexers, e
 
 </details>
 
+<details>
+<summary>
+Sequential Logic
+</summary>
+
+
+
+
+</details>
+
 
 
 
