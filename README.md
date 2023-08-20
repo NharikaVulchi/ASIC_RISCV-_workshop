@@ -413,6 +413,11 @@ The cicuit enters a known state in response to a reset signal.
 
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/c514b6ec-acd7-4d54-a511-30e196a25076)
 
+**Sequential Calculator :**
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/8e036851-31b9-43e2-907d-9010288802d3)
+
+
 </details>
 
 
