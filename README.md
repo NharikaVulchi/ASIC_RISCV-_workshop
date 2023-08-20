@@ -419,6 +419,53 @@ The cicuit enters a known state in response to a reset signal.
 
 
 </details>
+<details>
+<summary>
+Pipeline design
+</summary>
+
+Pipeline divides the execution into a specific number of stages.
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/b8a7bf3c-8cd7-440f-845b-378d8b1e9a2a)
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/10b60931-973e-4421-a6f7-81a08c5fe165)
+
+
+Pipeline computation can increase the clock frequency.
+
+**Identifiers**
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/bd30b81e-ae16-416d-8555-34195879e251)
+
+**Lab on Cycle calculator with 1 stage pipeline**
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/9f150f3b-bbac-4378-8370-8fa847a8513f)
+
+</details>
+
+<details>
+<summary>
+Validity
+</summary>
+Validity helps us to decode to see the signals which computes values inside a pipeline. 
+
+	
+This provides cleaner design, easier debug, better error debugging.
+
+
+ When we know the instant of when a flip flop holds a meaningful value , we can improve the frequency of clock and hence save power.
+
+ ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/c53a29ac-5a65-42aa-aec9-30618b49e293)
+
+
+ Calculating total distance using **valid** signal
+
+ ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/6a0d8e75-5a3b-4671-9cc0-05ed961018fe)
+
+
+</details>
 
 
 
