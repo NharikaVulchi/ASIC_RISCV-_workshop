@@ -212,8 +212,26 @@ RISC-V is a **little endian** based memory addressing system. The MSB of the dat
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/218b1a02-a324-48ad-bc57-dd99349aa4c9)
 
 
+**Load Instruction** 
+
+1. All the instructions are 32 bit wide.
+2. The **ld** instruction loads the immediate double word value into a register
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/1e716672-eaed-4f3f-8f11-2928b8440f65)
 
 
+**Add instruction**
+
+Add the contents of specified registers and stores into the source register. The instruction used is **add**
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/0c88d6b1-79e3-45f4-a367-094cf6440b22)
+
+
+**Store instruction**
+
+Stores doubleword back to memory. Syntax and example is shown below using **sd** instruction.
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/c27c6e75-ff46-40a4-b969-c2c1c2bb2802)
 
 
 
