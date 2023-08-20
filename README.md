@@ -199,5 +199,26 @@ Application Binary Interface
 
 **Registers in RISC-V 64 bit architecture**
 
+Two ways to load data into register:
+
+
+1. 64 bit data can be directly entered into the register
+2. 64 bit data can be loaded into the memory
+
+
+RISC-V is a **little endian** based memory addressing system. The MSB of the data sits to the leftmost bit in the register while storing the data.
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/218b1a02-a324-48ad-bc57-dd99349aa4c9)
+
+
+
+
+
+
+
+
+
+
 
 </details>
