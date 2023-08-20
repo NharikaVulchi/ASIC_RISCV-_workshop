@@ -190,7 +190,7 @@ Output:
 
 <details>
 <summary>
-Application Binary Interface
+Application Binary Interface and RISC-V instructions
 </summary>
 1. The application user can access the hardware resources using system calls, this is knows as the Application Binary Interface. This interface is done via the registers of the hardware.
 2. RISC-V architecture provides this interface.
@@ -234,6 +234,15 @@ Stores doubleword back to memory. Syntax and example is shown below using **sd**
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/c27c6e75-ff46-40a4-b969-c2c1c2bb2802)
 
 
+**Base integer instructions**
+
+1. Instructions which work on signed and unsigned 64 bit integers.
+2. These are the part of RISCVI core.
+3. Types:
+   		1. R-type: Instructions that operates on registers
+   		2. I-type: Instructions that operate on immediate value
+   		3. S-type : Instructions that involve storing back to memory
+   
 
 
 
