@@ -480,6 +480,42 @@ This provides cleaner design, easier debug, better error debugging.
 
 </details>
 
+<details>
+<summary>
+Hierarchy
+</summary>
+
+**Conway's game of life**
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/99c4f653-bc04-4483-9255-b9f9151579bb)
+
+
+</details>
+
+
+## DAY 4 Basic RISC-V CPU micro architecture
+
+
+<details>
+<summary>
+Introduction
+</summary>
+
+**CPU Microarchitecture**
+
+1. PC is a pointer which points to the Instruction Memory
+2. **Dec** decodes the instruction generated
+3. Branch instructions have a offset immediate value which is sent to MUX
+4. Adder computes next PC with the given offset value
+5. **RF** and **RD** are the two source registers for arithmetic instructions
+6. **DMem** is data memory
+7. **ALU** performs the operation on the intruction.
+8. **ld** instruction access the **DMem** and brings the data
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/fd077199-3002-40b4-a4c5-9745e4b838f9)
+
+</details>
+
 
 
 
