@@ -240,7 +240,11 @@ Stores doubleword back to memory. Syntax and example is shown below using **sd**
 2. These are the part of RISCVI core.
 3. Types:
    		1. R-type: Instructions that operates on registers
+
+   
    		2. I-type: Instructions that operate on immediate value
+
+   
    		3. S-type : Instructions that involve storing back to memory
    
 
