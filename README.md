@@ -259,7 +259,7 @@ Stores doubleword back to memory. Syntax and example is shown below using **sd**
 
 <details>
 <summary>
-**C program with ASM function call**
+C program with ASM function call
 </summary>
 Following is the flowchart representing the Assembly code for sum of numbers
 
