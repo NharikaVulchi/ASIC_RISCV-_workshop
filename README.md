@@ -331,28 +331,54 @@ We use the **rv32im.sh** file to view the following result and binary file which
 
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/60b980f4-596d-4a65-ba76-a00a1bb7e7c4)
 
+</details>
 
 
+## DAY 3 Digital Logic with TL-Verilog and Makerchip
 
+<details>
+<summary>
+Introduction to TL verilog
+</summary>
+TL Verilog introduces new abstractions that allow designers to describe circuits in a more abstract and concise manner while still maintaining a clear connection to the underlying hardware. Key features of TL verilog includes:
+1. Pipeline Abstractions: TL Verilog introduces the concept of pipelines, which are easy-to-define sequences of operations. This abstraction makes it simpler to describe complex pipelined circuits without having to manually manage all the stages and their interactions.
+2. Modular Arithmetic: TL Verilog provides built-in support for modular arithmetic, making it easier to handle wraparound behavior often found in digital circuits.
+3. Predicated Execution: TL Verilog allows operations to be conditionally executed based on a predicate. This helps in designing circuits that depend on certain conditions before proceeding with an operation.
+4. Synchronous and Combinational Blocks: TL Verilog introduces two types of blocks: synchronous and combinational. Synchronous blocks represent clocked logic, while combinational blocks represent combinational logic. This separation makes the design intent clearer.
+5. Testbenches and Verification: TL Verilog simplifies the process of creating testbenches for simulation and verification. The higher level of abstraction often results in more concise and understandable testbench code.
+6. Automatic Pipelining: The TL Verilog compiler automatically infers pipeline stages based on the code structure. This helps in achieving better performance with minimal effort from the designer.
+7. Data Types: TL Verilog introduces new data types like queue and stack, which simplify the description of data movement and storage within circuits.
+8. Higher Abstraction Level: TL Verilog enables designers to describe the intended behavior of the circuit more directly, often in a way that's closer to their intuitive understanding of the problem.
+</details>
 
+<details>
+<summary>
+Combinational Logic
+</summary>
+Combinational logic deals with the manipulation of binary inputs to produce binary outputs based on a predefined logical function. It involves designing circuits that perform specific operations without any memory or feedback. The outputs of combinational logic circuits depend solely on the current inputs, and there is no concept of past states influencing the current behavior.
 
+Key concepts include Logic gates, truth tables, boolean algebra, multiplexers, encoders, decoders and logic expressions.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+**LABS**
 
 
 </details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
