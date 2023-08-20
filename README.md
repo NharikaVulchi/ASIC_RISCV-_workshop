@@ -319,6 +319,40 @@ loop:
 ![Screenshot from 2023-08-20 10-46-46](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/f77442e5-5f99-4964-a88f-ef768520be9e)
 
 
+</details>
+
+<details>
+
+<summary>
+Build C program using RISC-V
+</summary>
+
+We use the **rv32im.sh** file to view the following result and binary file which is sent to the CPU:
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/60b980f4-596d-4a65-ba76-a00a1bb7e7c4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </details>
