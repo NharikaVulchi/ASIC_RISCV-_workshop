@@ -402,10 +402,16 @@ Key concepts include Logic gates, truth tables, boolean algebra, multiplexers, e
 Sequential Logic
 </summary>
 
-Sequenced by a clock signal.
+**Sequenced by a clock signal.**
 
 The cicuit enters a known state in response to a reset signal.
 
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/8fc25c8e-faf7-4993-9829-5c94b0bd8579)
+
+**Free running counter : Fibonacci Series**
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/c514b6ec-acd7-4d54-a511-30e196a25076)
 
 </details>
 
