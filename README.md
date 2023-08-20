@@ -254,10 +254,13 @@ Stores doubleword back to memory. Syntax and example is shown below using **sd**
 
 
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/e07adae8-5dc3-4e21-bb9e-9a86fe99866c)
+</details>
 
 
+<details>
+<summary>
 **C program with ASM function call**
-
+</summary>
 Following is the flowchart representing the Assembly code for sum of numbers
 
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/1140d3de-e995-4d4f-93ba-94895fd0a524)
