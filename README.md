@@ -390,6 +390,11 @@ Key concepts include Logic gates, truth tables, boolean algebra, multiplexers, e
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/dab3cb4d-d4aa-439e-94a8-32955e20d579)
 
 
+**Example 6: Calculator**
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/2fe821c6-d056-4b67-a330-1f5ae28462a4)
+
+
 </details>
 
 
