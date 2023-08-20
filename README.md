@@ -402,7 +402,9 @@ Key concepts include Logic gates, truth tables, boolean algebra, multiplexers, e
 Sequential Logic
 </summary>
 
+Sequenced by a clock signal.
 
+The cicuit enters a known state in response to a reset signal.
 
 
 </details>
