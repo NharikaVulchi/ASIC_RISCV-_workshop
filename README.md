@@ -362,6 +362,34 @@ Key concepts include Logic gates, truth tables, boolean algebra, multiplexers, e
 **LABS**
 
 
+**Example 1: Pythagoras theorem**
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/183e4324-7844-48f3-b46c-5041a15c640e)
+
+
+**Example 2: inverter**
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/1dac5a92-1577-4289-9743-d47301735689)
+
+
+**Example 3: XOR gate**
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/90ace840-badd-43fa-993d-670e0123e3fe)
+
+
+**Example 4: Addition**
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/1251264a-11b6-4115-aa96-51c360144583)
+
+
+**Example 5: Multiplexer**
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/9ed8f938-ba1a-4612-b284-7ebf7c869b40)
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/dab3cb4d-d4aa-439e-94a8-32955e20d579)
+
+
 </details>
 
 
