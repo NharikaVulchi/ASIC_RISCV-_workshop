@@ -256,5 +256,54 @@ Stores doubleword back to memory. Syntax and example is shown below using **sd**
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/e07adae8-5dc3-4e21-bb9e-9a86fe99866c)
 
 
+**C program with ASM function call**
+
+Following is the flowchart representing the Assembly code for sum of numbers
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/1140d3de-e995-4d4f-93ba-94895fd0a524)
+
+We try to use **main** from C program to load the required values to the ASM code 
+
+C code:
+
+```
+#include <stdio.h>
+
+extern int load(int x, int y);
+
+int main() {
+	int result=0;
+	int count = 9;
+	result = load(0x0, count+1);.global load
+	printf("Sum of number 1 to %d is %d\n", count,result);
+}
+```
+
+
+ASM code:
+
+
+```
+.section .text
+.global load
+.type load, @function
+
+load:
+	add	a4,a0,zero
+	add	a2,a0,a1
+	add	a3,a0,zero
+loop:
+	add	a4,a3,a4
+	addi	a3,a3,1
+	blt	a3,a2,loop
+	add	a0,a4,zero
+	ret
+```
+
+
+Output:
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/9b542751-14d1-48d4-8d50-854a4d0d0e36)
+
 
 </details>
