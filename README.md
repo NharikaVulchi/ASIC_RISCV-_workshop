@@ -246,9 +246,14 @@ Stores doubleword back to memory. Syntax and example is shown below using **sd**
 
    
    		3. S-type : Instructions that involve storing back to memory
-   
 
 
+5 Bits are utilized to represent the register address in an instruction, so we have a total of 2^5 which is 32 number of registers in RISC-V.
+
+**Each register has a specific ABI code to access it**. This is shown in the below figure
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/e07adae8-5dc3-4e21-bb9e-9a86fe99866c)
 
 
 
