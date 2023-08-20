@@ -460,9 +460,22 @@ This provides cleaner design, easier debug, better error debugging.
  ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/c53a29ac-5a65-42aa-aec9-30618b49e293)
 
 
- Calculating total distance using **valid** signal
+ **Lab 1** Calculating total distance using **valid** signal
 
  ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/6a0d8e75-5a3b-4671-9cc0-05ed961018fe)
+
+
+**Lab 2** Calculator with **valid**
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/40eeebc0-c998-4caa-bf6c-aed5433530b8)
+
+
+**Lab 3** Calculator with memory and recall
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/934d43ca-f88f-4ac7-b544-187c840c436a)
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/b5e3445b-c788-45bf-9281-c8a8791ef8ba)
 
 
 </details>
