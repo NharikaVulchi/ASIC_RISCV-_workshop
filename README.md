@@ -264,7 +264,7 @@ Following is the flowchart representing the Assembly code for sum of numbers
 
 We try to use **main** from C program to load the required values to the ASM code 
 
-C code:
+**C code:**
 
 ```
 #include <stdio.h>
@@ -280,7 +280,7 @@ int main() {
 ```
 
 
-ASM code:
+**ASM code:**
 
 
 ```
@@ -301,9 +301,21 @@ loop:
 ```
 
 
-Output:
+**Output:**
 
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/9b542751-14d1-48d4-8d50-854a4d0d0e36)
+
+
+**Lab works:**
+
+![Screenshot from 2023-08-20 10-43-02](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/bc51d090-a383-4d2b-a33c-0f6544241d1f)
+
+
+![Screenshot from 2023-08-20 10-43-23](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/379f1f1c-29d5-491f-b235-7ff104606895)
+
+![Screenshot from 2023-08-20 10-46-46](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/f77442e5-5f99-4964-a88f-ef768520be9e)
+
+
 
 
 </details>
