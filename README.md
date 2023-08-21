@@ -192,6 +192,7 @@ Output:
 <summary>
 Application Binary Interface and RISC-V instructions
 </summary>
+	
 1. The application user can access the hardware resources using system calls, this is knows as the Application Binary Interface. This interface is done via the registers of the hardware.
 2. RISC-V architecture provides this interface.
 3. Length of the registers is given by **xlen** which can be 32 bit wide or 64 bit wide.
@@ -340,6 +341,8 @@ We use the **rv32im.sh** file to view the following result and binary file which
 <summary>
 Introduction to TL verilog
 </summary>
+
+ 
 TL Verilog introduces new abstractions that allow designers to describe circuits in a more abstract and concise manner while still maintaining a clear connection to the underlying hardware. Key features of TL verilog includes:
 1. Pipeline Abstractions: TL Verilog introduces the concept of pipelines, which are easy-to-define sequences of operations. This abstraction makes it simpler to describe complex pipelined circuits without having to manually manage all the stages and their interactions.
 2. Modular Arithmetic: TL Verilog provides built-in support for modular arithmetic, making it easier to handle wraparound behavior often found in digital circuits.
@@ -513,6 +516,21 @@ Introduction
 8. **ld** instruction access the **DMem** and brings the data
 
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/fd077199-3002-40b4-a4c5-9745e4b838f9)
+
+</details>
+
+
+<details>
+<summary>
+Fetch and Decode
+</summary>
+
+Processor is designed in three steps:
+1. Fetch
+2. Decode
+3. Execute
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/deff1229-b196-4806-82da-dbd1586fe04a)
 
 </details>
 
