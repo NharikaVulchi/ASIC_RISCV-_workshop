@@ -897,19 +897,36 @@ Code:
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/84121a80-b4c2-4252-b249-b53cbf28d70c)
 
 
+</details>
+
+<details>
+<summary>
+Lab works
+</summary>
 The above case can be improved by taking care of invalid cycles
 
-**LAB 2 taking care of invalid cycles**
+**LAB ALU CODE**
 
 
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/0573d796-a47a-437a-8cf1-bb9356b6986c)
 
-![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/ce4b6f2c-fc9b-42eb-9808-0c8002b18350)
 
-![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/db69e2ca-cfcf-40e9-b5c6-18bc612663d0)
+**LAB Load Data**
 
-![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/11ee5cd4-6f8f-45e5-aec9-4f17d42d7ef1)
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/ce5a140c-cf4f-4724-8b9d-41d82c70fd05)
 
+
+**LAB Control Logic for Jump instructions**
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/d4751ddc-589c-4239-8899-fdb26d280b2c)
 </details>
+
+**THE FINAL CPU CORE**
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/f79587b9-6f14-42c7-8251-22dea8a3cb7b)
+
+
+
 
 
 
