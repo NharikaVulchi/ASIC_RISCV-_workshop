@@ -840,6 +840,20 @@ $br_target_pc[31:0] = $pc +$imm;
 
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/c88a6b27-213b-4146-b303-7f4e76dc124f)
 
+
+
+**Test Bench**
+
+
+Code :
+
+```
+*passed = |cpu/xreg[10]>>5$value == (1+2+3+4+5+6+7+8+9) ;
+```
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/6035d984-bb85-456a-bd6b-3b07f445d4d7)
+
 </details>
 
 
