@@ -881,7 +881,7 @@ In our example, if we consider 3 cycle latency between each instruction , we can
 
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/f11b77db-c385-4726-9f4b-152d63e9661d)
 
-**LAB 1** 3_cycle latency: using **valid** after 3 cycles
+3_cycle latency: using **valid** after 3 cycles
 
 Code:
 
@@ -901,14 +901,13 @@ The above case can be improved by taking care of invalid cycles
 
 **LAB 2 taking care of invalid cycles**
 
-Code:
-
-```
-
-```
 
 
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/ce4b6f2c-fc9b-42eb-9808-0c8002b18350)
 
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/db69e2ca-cfcf-40e9-b5c6-18bc612663d0)
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/11ee5cd4-6f8f-45e5-aec9-4f17d42d7ef1)
 
 </details>
 
