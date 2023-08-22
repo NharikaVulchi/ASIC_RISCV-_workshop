@@ -929,7 +929,11 @@ The above case can be improved by taking care of invalid cycles
 ## Contributors
 
 Niharika Vulchi, IIIT B
+
+
 Kunal Ghosh, VSD
+
+
 Steve Hoover, Founder of Redwood EDA, LLC
 
 
