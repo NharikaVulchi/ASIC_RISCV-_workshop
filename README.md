@@ -556,7 +556,44 @@ Below code is consdiered for designing PC
          
          $pc[31:0] = >>1$reset ? 32'b0 : >>1$pc + 32'd4;
 ```         
-         
+
+
+Implementation in makerchip:
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/e9c2d453-cb98-4a90-9a4d-509e75d30614)
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/a10dfab3-efc8-4117-af8b-c80eb7455c63)
+
+**Fetch instruction**
+
+Fetches the instruction from Instruction Memory and gives to the Decoder
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/61544c1a-6015-4bec-a026-05201cf79c72)
+
+Code:
+
+```
+|cpu
+  @0
+     $reset = *reset;
+     $pc[31:0] = >>1$reset ? 0 : (>>1$pc + 32'd4);
+  
+  @1 
+     $imem_rd_addr[M4_IMEM_INDEX_CNT-1:0] = $pc[M4_IMEM_INDEX_CNT+1:2];
+     $imem_rd_en = !$reset;
+     $instr[31:0] = $imem_rd_data[31:0];
+     
+  ?$imem_rd_en
+     @1
+        $imem_rd_data[31:0] = imem[$imem_rd_addr]$instr;
+```
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/c9fe82fb-4877-4073-bcf2-518ab324f353)
+
 
 </details>
 
