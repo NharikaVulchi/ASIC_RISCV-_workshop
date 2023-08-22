@@ -687,6 +687,29 @@ Code:
 
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/0cb6ae76-fc56-4bda-b9a9-98a1532ab0bd)
 
+
+**Decode individual Instruction**
+
+Code:
+
+```
+   // Individual Instruction decode
+         $dec_bits[10:0] = {$funct7[5], $funct3, $opcode};
+         $is_beq = $dec_bits ==? 11'bx_000_1100011;
+         $is_bne = $dec_bits ==? 11'bx_001_1100011;
+         $is_blt = $dec_bits ==? 11'bx_100_1100011;
+         $is_bge = $dec_bits ==? 11'bx_101_1100011;
+         $is_bltu = $dec_bits ==? 11'bx_110_1100011;
+         $is_bgeu = $dec_bits ==? 11'bx_111_1100011;
+         $is_addi = $dec_bits ==? 11'bx_000_0010011;
+         $is_add = $dec_bits ==? 11'b0_000_0110011;
+```
+
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/b4fba7d0-cd09-40bf-8b9f-8d4c311d13f9)
+
+
 </details>
 
 
