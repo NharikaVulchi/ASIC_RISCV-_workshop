@@ -856,9 +856,61 @@ Code :
 
 </details>
 
+## DAY 5 Complete Pipelined RISC-V CPU micro-architecture
+
+<details>
+<summary>
+Pipelining the CPU
+</summary>
+
+Waterfall Logic Diagram : There is one logic in previous stage with respect to the one which is in the current stage. S0, Instead of feeding back the logic, we feed it into the INSTRUCTION that is waiting in the next stage.
+
+Dependency of one instruction on another is clearly seen in this diagram.
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/27d11ada-974e-4e88-9463-f1e70b140c73)
+
+Performance of CPU is increased with increased clock cycle frequency. This, creates problems in dependancies between each instruction with another. Hazards:
+1. Branch with the control flow hazard
+2. Read after write hazard
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/6ad96eab-8f82-45cb-8fa9-ad636d5bcaca)
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/2cbd2ab0-ffa9-4a4c-b294-eeaf4d9155ef)
+
+In our example, if we consider 3 cycle latency between each instruction , we can solve the hazards that are involved (read afer write and branch )
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/f11b77db-c385-4726-9f4b-152d63e9661d)
+
+**LAB 1** 3_cycle latency: using **valid** after 3 cycles
+
+Code:
+
+```
+         //3 cycle valid signal
+         $start = !$reset && >>1$reset;
+         $valid = $reset ? 1'b0 : 
+                  $start ? 1'b1 : 
+                  >>3$valid ;
+```
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/84121a80-b4c2-4252-b249-b53cbf28d70c)
+
+
+The above case can be improved by taking care of invalid cycles
+
+**LAB 2 taking care of invalid cycles**
+
+Code:
+
+```
+
+```
 
 
 
+
+</details>
 
 
 
