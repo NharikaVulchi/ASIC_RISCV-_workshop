@@ -609,7 +609,7 @@ Type of instruction is decided by the opdcode of the instruction.There are 6 ins
 
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/71de7b79-4b1c-402a-b36b-9488f123f061)
 
-Instruction Type Decode Logic:
+**Instruction Type Decode Logic:**
 
 
 ```
@@ -635,7 +635,7 @@ Instruction Type Decode Logic:
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/82433378-8e70-419f-b372-d465e390d4e1)
 
 
-Decode Immediate Part of the Instruction:
+**Decode Immediate Part of the Instruction:**
 
 We take the immediate value from the instruction based on the type of instruction given in the below table. We use the concatenation operator to fetch the bits in the immediate value.
 
@@ -657,6 +657,35 @@ Code:
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/7ecc5aee-cc4f-4622-979b-cd1f8176d544)
 
 
+**Decode instruction based on Instruction Type**
+
+Code:
+
+```
+// Instruction field decode based on type
+         $rs2_valid = $is_r_instr || $is_s_instr || $is_b_instr;
+         ?$rs2_valid
+            $rs2[4:0] = $instr[24:20];
+            
+         $rs1_valid = $is_r_instr || $is_i_instr || $is_s_instr || $is_b_instr;
+         ?$rs1_valid
+            $rs1[4:0] = $instr[19:15];
+         
+         $funct3_valid = $is_r_instr || $is_i_instr || $is_s_instr || $is_b_instr;
+         ?$funct3_valid
+            $funct3[2:0] = $instr[14:12];
+            
+         $funct7_valid = $is_r_instr ;
+         ?$funct7_valid
+            $funct7[6:0] = $instr[31:25];
+            
+         $rd_valid = $is_r_instr || $is_i_instr || $is_u_instr || $is_j_instr;
+         ?$rd_valid
+            $rd[4:0] = $instr[11:7];
+```
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/0cb6ae76-fc56-4bda-b9a9-98a1532ab0bd)
 
 </details>
 
