@@ -536,7 +536,7 @@ We implement the below CPU :
 
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/deff1229-b196-4806-82da-dbd1586fe04a)
 
-**PC**
+**LAB 1 PC**
 
 
 1. PC is incremented to the next instruction after each execution
@@ -566,7 +566,7 @@ Implementation in makerchip:
 
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/a10dfab3-efc8-4117-af8b-c80eb7455c63)
 
-**Fetch instruction**
+**LAB 2 Fetch instruction**
 
 Fetches the instruction from Instruction Memory and gives to the Decoder
 
@@ -609,7 +609,7 @@ Type of instruction is decided by the opdcode of the instruction.There are 6 ins
 
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/71de7b79-4b1c-402a-b36b-9488f123f061)
 
-**Instruction Type Decode Logic:**
+**LAB 3 Instruction Type Decode Logic:**
 
 
 ```
@@ -635,7 +635,7 @@ Type of instruction is decided by the opdcode of the instruction.There are 6 ins
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/82433378-8e70-419f-b372-d465e390d4e1)
 
 
-**Decode Immediate Part of the Instruction:**
+**LAB 4 Decode Immediate Part of the Instruction:**
 
 We take the immediate value from the instruction based on the type of instruction given in the below table. We use the concatenation operator to fetch the bits in the immediate value.
 
@@ -657,7 +657,7 @@ Code:
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/7ecc5aee-cc4f-4622-979b-cd1f8176d544)
 
 
-**Decode instruction based on Instruction Type**
+**LAB 5 Decode instruction based on Instruction Type**
 
 Code:
 
@@ -688,7 +688,7 @@ Code:
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/0cb6ae76-fc56-4bda-b9a9-98a1532ab0bd)
 
 
-**Decode individual Instruction**
+**LAB 6 Decode individual Instruction**
 
 Code:
 
@@ -714,7 +714,76 @@ Code:
 
 
 
+<details>
+<summary>
+Control Logic
+</summary>
 
+**LAB 1 Register file read**
+
+After we decode the instruction we read the data from the register files into ALU to faciliate the ALU operation on the registers.
+
+The below figure shows a register file with **read_enable** and **data_output** registers.We map the address of the data registers to be read from the source registers we get from the instruction decode stage.
+
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/eeabc266-b35d-4eed-811b-439c7c8c429c)
+
+
+We assign the **src1_value** and **src2_value** to the output data from the register files
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/1dae8967-d24e-42cd-ba64-f6473562c5c7)
+
+
+
+Code:
+
+```
+$rf_wr_en = 1'b0;
+$rf_wr_index[4:0] = 5'b0;
+$rf_wr_data[31:0] = 32'b0;
+$rf_rd_en1 = $rs1_valid;
+$rf_rd_index1[4:0] = $rs1;
+$rf_rd_en2 = $rs2_valid;
+$rf_rd_index2[4:0] = $rs2;
+
+//assigning values
+$src1_value[31:0] = $rf_rd_data1; 
+$src2_value[31:0] = $rf_rd_data2;
+```
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/18034dd4-49d3-41a3-b650-c900b92bbe83)
+
+
+
+**LAB 2 ALU Operations**
+
+
+We consider two operations **add** and **addi** 
+
+ ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/7bc1708e-7413-45e0-aa93-24cfd21c6a8a)
+
+Code:
+
+```
+$result[31:0] = $is_addi ? $src1_value + $imm :
+                         $is_add ? $src1_value + $src2_value :
+                         32'bx ;
+```
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/2d3f95ec-f7e2-4894-aa69-8ab4ca4cf691)
+
+
+
+**LAB 3 Register File Write**
+
+After the ALU operation we store the values back into the resgister file. Below figure gives the detailed description.
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/f2fb3384-ac6e-4985-b3f8-102cfd6473de)
+
+
+</details>
 
 
 
