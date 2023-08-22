@@ -926,9 +926,24 @@ The above case can be improved by taking care of invalid cycles
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/f79587b9-6f14-42c7-8251-22dea8a3cb7b)
 
 
+## Contributors
+
+Niharika Vulchi, IIIT B
+Kunal Ghosh, VSD
+Steve Hoover, Founder of Redwood EDA, LLC
 
 
+## References
 
+https://github.com/RISCV-MYTH-WORKSHOP/RISC-V-CPU-Core-using-TL-Verilog
+
+https://github.com/stevehoover/RISC-V_MYTH_Workshop/blob/master/risc-v_shell.tlv
+
+https://www.makerchip.com/sandbox/0o2fXh1wp/0Wnh2g
+
+https://www.makerchip.com/sandbox/0zpfRh43g/08qhEg
+
+https://www.makerchip.com/sandbox/0o2fXh1wp/0g5hr5
 
 
 
