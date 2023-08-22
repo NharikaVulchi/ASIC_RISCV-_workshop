@@ -530,9 +530,36 @@ Processor is designed in three steps:
 2. Decode
 3. Execute
 
+
+We implement the below CPU :
+
+
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/deff1229-b196-4806-82da-dbd1586fe04a)
 
+**PC**
+
+
+1. PC is incremented to the next instruction after each execution
+2. PC in RISC-V is a 32 bit register, which is byte addressable , so we increment it by 4 to move to the next instruction, since instructions are also 32-bit
+   
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/97879317-6ed1-4a4f-8dbf-2b9ed5d6714b)
+
+
+Below code is consdiered for designing PC 
+
+
+```
+|cpu
+      @0
+         $reset = *reset;
+         
+         $pc[31:0] = >>1$reset ? 32'b0 : >>1$pc + 32'd4;
+```         
+         
+
 </details>
+
 
 
 
