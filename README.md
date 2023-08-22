@@ -595,6 +595,69 @@ Code:
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/c9fe82fb-4877-4073-bcf2-518ab324f353)
 
 
+**Instruction decode**
+
+Type of instruction is decided by the opdcode of the instruction.There are 6 instructions type in RISC-V :
+
+1. Register (R) type
+2. Immediate (I) type
+3. Store (S) type
+4. Branch (B) type
+5. Upper immediate (U) type
+6. Jump (J) type
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/71de7b79-4b1c-402a-b36b-9488f123f061)
+
+Instruction Type Decode Logic:
+
+
+```
+@1
+         $is_u_instr = $instr[6:2] ==? 5'b0x101;
+         
+         $is_s_instr = $instr[6:2] ==? 5'b0100x;
+         
+         $is_r_instr = $instr[6:2] ==? 5'b01011 ||
+                       $instr[6:2] ==? 5'b011x0 ||
+                       $instr[6:2] ==? 5'b10100;
+         
+         $is_j_instr = $instr[6:2] ==? 5'b11011;
+         
+         $is_i_instr = $instr[6:2] ==? 5'b0000x ||
+                       $instr[6:2] ==? 5'b001x0 ||
+                       $instr[6:2] ==? 5'b11001;
+         
+         $is_b_instr = $instr[6:2] ==? 5'b11000;
+```
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/82433378-8e70-419f-b372-d465e390d4e1)
+
+
+Decode Immediate Part of the Instruction:
+
+We take the immediate value from the instruction based on the type of instruction given in the below table. We use the concatenation operator to fetch the bits in the immediate value.
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/eef79df6-b136-4728-9fef-53680ea7750e)
+
+Code:
+
+```
+ $imm[31:0] = $is_i_instr ? {{21{$instr[31]}}, $instr[30:20]} :
+	$is_s_instr ? {{21{$instr[31]}}, $instr[30:25], $instr[11:7]} :
+	$is_b_instr ? {{20{$instr[31]}}, $instr[7], $instr[30:25], $instr[11:8], 1'b0} :
+	$is_u_instr ? {$instr[31:12], 12'b0} :
+	$is_j_instr ? {{12{$instr[31]}}, $instr[19:12], $instr[20], $instr[30:21], 1'b0} :
+                                    32'b0;
+```
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/7ecc5aee-cc4f-4622-979b-cd1f8176d544)
+
+
+
 </details>
 
 
