@@ -782,6 +782,35 @@ After the ALU operation we store the values back into the resgister file. Below 
 
 ![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/f2fb3384-ac6e-4985-b3f8-102cfd6473de)
 
+Code
+
+```
+$rf_wr_en = $rd_valid && $rd != 5'b0;
+$rf_wr_index[4:0] = $rd;
+$rf_wr_data[31:0] = $result;
+```
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/5a1fd8a4-144f-46c7-bd1a-dfa9b13536dd)
+
+
+**ARRAY**
+
+Arrays are typically implemented using a combination of registers and memory. Arrays can be stored in memory, where each element is stored at a specific memory address. The processor can use load and store instructions to access these elements. For example, you might load an element from an array in memory into a register, perform operations on it, and then store the result back into memory.
+
+read operation  involves, read_enable and read_index signals 
+write operation involves write_enable, write_index and write_data
+
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/39e87031-64d9-43bf-a643-bd199b96ae95)
+
+**CPU reads the instructions that are written in the previous cylce**
+
+![image](https://github.com/NharikaVulchi/ASIC_RISCV-_workshop/assets/83216569/8ef1f0cb-ae1e-4708-852c-532172255851)
+
+
+**Branch Instructions**
+
 
 </details>
 
